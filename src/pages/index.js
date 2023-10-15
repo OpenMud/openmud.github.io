@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Learn MudPiler Here!
+            Start Now!
           </Link>
         </div>
       </div>

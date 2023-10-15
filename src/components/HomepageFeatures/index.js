@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Compatible with Byond',
+    Svg: require('@site/static/img/ben-Jigsaw-Puzzle.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        OpenMud is designed to support open source games targeting the Byond Engine, as well as motivating the creation of new open-source, community driven games.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Easy to Use & Extensible',
+    Svg: require('@site/static/img/hammer-peterm1.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The primary goal of OpenMud is to enable users to focus on the story of their MUD, without having to worry about the technical details around building a multiplayer game.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Portable',
+    Svg: require('@site/static/img/1677243125responsive-web-design.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+      OpenMud's client component is implemented using React, enabling you to deploy the client anywhere ranging from the Web, Desktop, or Mobile Devices.
       </>
     ),
   },
