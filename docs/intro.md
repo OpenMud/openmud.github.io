@@ -4,42 +4,35 @@ sidebar_position: 1
 
 # Introduction
 
-MudPiler is a tool that enabled experienced and in-experienced developers to quickly collaborate and build out multiplayer worlds. Specifically, MudPiler aims to support Open Source game development in a way that allows for lots of contributions, thereby allowing for games which continuously evolve.
+OpenMud is a tool that enabled experienced and in-experienced developers to quickly collaborate and build out multiplayer worlds. Specifically, OpenMud aims to support Open Source game development in a way that allows highly collaborative and continuously evolving games.
 
-MudPiler involves developing games in a similar way to the Byond Game Engine, however MudPiler is open source, more portable, open-source, easily extensible and open-source.
-
-## A Survery of MudPiler
-
-MudPiler has many different components, which together, allow you to create very complex multiplayer game worlds.
-
-This section will go over MudPiler on a high-level.
-
-### The MudPiler is a Compiler
-Using MudPiler to design your game, you will write and design your game in a programming language called the "Dream Maker Language". Together with the source files of your project, you will also have audio and image files stored together in a **MudPiler Project**.
-
-MudPiler compiles your game source files into two separate components:
-1. A Client Component, which is highly portable and can execute in your webbrowser, or any other platform
-2. A server component which can execute on either Windows or Linux systems.
-
-![alt](overview.png)
-
-Once your game is ready to test, you will compile the MudPiler Project using the MudPiler CLI. The compiler will produce two separate artefacts
-  * The Asset Package, contains all of your front-end game assets (images, audios etc.) These asset files are then loaded into the open source client template, which can connect to your game server.
-  
-  * The Compiled Game Logic assembly contains all of your game logic. This is loaded into an instance of the open-source MudPiler server, which hosts your game and simulates the game world consistent to the logic defined in the Game Logic assembly.
-
-The Open Source Client Template is designed to function with all MudPiler Games, but it is only a template. The front-end can be easily customized (adding additional GUI elements, or changing the look and feel of the game.)
-
-In addition, the Open Source Server is likewise designed to be able to host all MudPiler games, but it can be extended and customized if you need additional logic. The server component is written in C# and designed to be easily extensible.
+OpenMud involves developing games in a similar way to the Byond Game Engine, however OpenMud is open source, more portable, open-source, easily extensible and open-source.
 
 ## Quickstart Guide
 
-Without digging into too many details, lets quickly spin up our own multiplayer world.
+Without digging into too many details, quickly dive into OpenMud by following the **[installation and quick-start guides.](/docs/category/getting-started)**
 
-1. Run this command
-``
-hello``
-xyz...
+## A Survery of OpenMud
+
+While the OpenMud Command-Line shields you from the intricacies of how OpenMud operates, you can delve into this section to gain some insight into the inner workings of OpenMud.
+
+OpenMud comprises a myriad of components that, when combined, empower you to craft multiplayer game worlds. In this section, we'll provide a high-level overview of OpenMud.
+
+### The OpenMud Compiler (Mudpiler)
+Using OpenMud to design your game, you will write and design your game in a programming language called the "Dream Maker Language". Together with the source files of your project, you will also have audio and image files stored together in a **OpenMud Project**.
+
+When you are ready to build and test your game, you will use the OpenMud command-line (omd) to trigger the MudPiler, which will compile your game source files into two separate components:
+1. A Client Component, which is highly portable and can execute in your webbrowser, or any other platform
+2. A Server Component which can execute on either Windows or Linux systems and manages the online instance of your game.
+
+![alt](overview.png)
+
+Once your game is ready to test, you will compile your Project using the MudPiler, which will produce two separate artefacts
+  * The Asset Package, contains all of your front-end game assets (images, audios etc.) These asset files are then loaded into the open source client template, which can connect to your game server.
+  
+  * The Compiled Game Logic assembly contains all of your game logic. This is loaded into an instance of the open-source OpenMud server, which hosts your game and simulates the game world consistent to the logic defined in the Game Logic assembly.
+
+The Open Source Client Template is designed to function with all MudPiler Games, but it is only a template. The front-end can be easily customized (adding additional GUI elements, or changing the look and feel of the game.)
 
 ## Supporting the Development of OpenMud
 
