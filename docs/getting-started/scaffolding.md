@@ -2,30 +2,38 @@
 sidebar_position: 3
 ---
 
-# Scaffolding a Project
+# Creating a Project
+Using the OpenMud command line and the Visual Studio Code IDE, creating a new OpenMud project is easy. This page steps you through creating your first project with OpenMud.
 
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
+## Creating the Project
 
-It builds your site as simple **static HTML, JavaScript and CSS files**.
+1. Open Visual Studio Code, and navigate to an empty folder where you would like to save your project. (File -> Open Folder) You should end up in an empty directory with Visual Studio Code, as seen below:
 
-## Build your site
 
-Build your site **for production**:
+![alt](img/tut0.1.png)
 
-```bash
-npm run build
-```
+2. Open the Command Terminal in Visual Studio Code by using the menu item `View -> Terminal` and execute the command 
 
-The static files are generated in the `build` folder.
+    `omd create --project my-first-project --template quick-start`
+    
+    You should see 3 directories created:
+     * game (This is where all of your game code & assets will be saved)
+     * client (The client project. You can leave this alone to use the default client code)
+     * .vscode (Contains some default Visual Studio Code tasks for building and debugging)
 
-## Deploy your site
+![alt](img/tut0.2.png)
 
-Test your production build locally:
+3. Expanding the game folder, you can see the source files and assets for your game. For the typical use of OpenMud, all your code will go here and you will not need to concern yourself with any code outside of this folder.
 
-```bash
-npm run serve
-```
 
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
+![alt](img/tut0.3.png)
 
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
+4. The OpenMud template also includes all of the default build, run and debug configurations with VS Code. You can compile and run your game by just using the  `Run -> Start Debugging` menu option in Visual Studio Code.
+
+
+![alt](img/tut0.4.png)
+
+4. After selecting "Start Debugging", omd will build and start hosting your game server. When it is ready, it will be available on https://localhost:7087 ; The "Debug Console" will print out the address the game is being hosted when the server is ready.
+
+
+![alt](img/tut0.5.png)
